@@ -1,0 +1,15 @@
+#ifndef LENET_CONV2_BIAS_H
+#define LENET_CONV2_BIAS_H
+
+#define CONV2_BIAS_SIZE 16
+#define CONV2_BIAS_NDIM 1
+
+/* Shape: [16] */
+/* Flatten order: C (row-major) */
+static const float conv2_bias[16] = {
+    -0.00142009964f, 0.146263048f, 0.155698657f, -0.0899214521f, -0.118494853f, 0.0612628534f,
+    0.0643606856f, 0.0892222971f, 0.113797612f, 0.0438512489f, 0.0947149694f, 0.113257572f,
+    0.0564242117f, 0.0924203247f, 0.0873030648f, 0.0167229604f
+};
+
+#endif /* LENET_CONV2_BIAS_H */

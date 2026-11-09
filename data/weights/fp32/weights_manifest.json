@@ -1,0 +1,261 @@
+{
+    "model": "LeNet",
+    "precision": "FP32",
+    "source_model": "data/checkpoints/lenet_fp32.pth",
+    "total_parameters": 44426,
+    "total_weight_bytes": 177704,
+    "flatten_order": "C",
+    "parameter_layout": {
+        "conv_weight": [
+            "out_channels",
+            "in_channels",
+            "kernel_height",
+            "kernel_width"
+        ],
+        "fc_weight": [
+            "out_features",
+            "in_features"
+        ],
+        "bias": [
+            "output_features"
+        ]
+    },
+    "notes": [
+        "Weights are exported in PyTorch native order.",
+        "All arrays use C-order flattening.",
+        "MEM files contain IEEE754 FP32 bit patterns.",
+        "MEM files are not INT8 quantized weights.",
+        "INT8 quantization will be handled separately."
+    ],
+    "parameters": [
+        {
+            "name": "conv1_weight",
+            "shape": [
+                6,
+                1,
+                5,
+                5
+            ],
+            "dtype": "float32",
+            "flatten_order": "C",
+            "statistics": {
+                "min": -0.7013328075408936,
+                "max": 0.5664388537406921,
+                "mean": 0.058102790266275406,
+                "std": 0.25099197030067444,
+                "num_elements": 150,
+                "num_bytes": 600
+            },
+            "files": {
+                "npy": "data/weights/fp32/npy/conv1_weight.npy",
+                "txt": "data/weights/fp32/txt/conv1_weight.txt",
+                "mem": "data/weights/fp32/mem/conv1_weight.mem",
+                "c_header": "data/weights/fp32/c/conv1_weight.h"
+            }
+        },
+        {
+            "name": "conv1_bias",
+            "shape": [
+                6
+            ],
+            "dtype": "float32",
+            "flatten_order": "C",
+            "statistics": {
+                "min": -0.17105545103549957,
+                "max": 0.21122072637081146,
+                "mean": 0.024897431954741478,
+                "std": 0.11529456079006195,
+                "num_elements": 6,
+                "num_bytes": 24
+            },
+            "files": {
+                "npy": "data/weights/fp32/npy/conv1_bias.npy",
+                "txt": "data/weights/fp32/txt/conv1_bias.txt",
+                "mem": "data/weights/fp32/mem/conv1_bias.mem",
+                "c_header": "data/weights/fp32/c/conv1_bias.h"
+            }
+        },
+        {
+            "name": "conv2_weight",
+            "shape": [
+                16,
+                6,
+                5,
+                5
+            ],
+            "dtype": "float32",
+            "flatten_order": "C",
+            "statistics": {
+                "min": -0.4358081817626953,
+                "max": 0.3448706269264221,
+                "mean": -0.005298868287354708,
+                "std": 0.10604127496480942,
+                "num_elements": 2400,
+                "num_bytes": 9600
+            },
+            "files": {
+                "npy": "data/weights/fp32/npy/conv2_weight.npy",
+                "txt": "data/weights/fp32/txt/conv2_weight.txt",
+                "mem": "data/weights/fp32/mem/conv2_weight.mem",
+                "c_header": "data/weights/fp32/c/conv2_weight.h"
+            }
+        },
+        {
+            "name": "conv2_bias",
+            "shape": [
+                16
+            ],
+            "dtype": "float32",
+            "flatten_order": "C",
+            "statistics": {
+                "min": -0.11849485337734222,
+                "max": 0.15569865703582764,
+                "mean": 0.05784144252538681,
+                "std": 0.07347938418388367,
+                "num_elements": 16,
+                "num_bytes": 64
+            },
+            "files": {
+                "npy": "data/weights/fp32/npy/conv2_bias.npy",
+                "txt": "data/weights/fp32/txt/conv2_bias.txt",
+                "mem": "data/weights/fp32/mem/conv2_bias.mem",
+                "c_header": "data/weights/fp32/c/conv2_bias.h"
+            }
+        },
+        {
+            "name": "fc1_weight",
+            "shape": [
+                120,
+                256
+            ],
+            "dtype": "float32",
+            "flatten_order": "C",
+            "statistics": {
+                "min": -0.4289713501930237,
+                "max": 0.3466944396495819,
+                "mean": 0.0017397557385265827,
+                "std": 0.0565386526286602,
+                "num_elements": 30720,
+                "num_bytes": 122880
+            },
+            "files": {
+                "npy": "data/weights/fp32/npy/fc1_weight.npy",
+                "txt": "data/weights/fp32/txt/fc1_weight.txt",
+                "mem": "data/weights/fp32/mem/fc1_weight.mem",
+                "c_header": "data/weights/fp32/c/fc1_weight.h"
+            }
+        },
+        {
+            "name": "fc1_bias",
+            "shape": [
+                120
+            ],
+            "dtype": "float32",
+            "flatten_order": "C",
+            "statistics": {
+                "min": -0.10733858495950699,
+                "max": 0.13198837637901306,
+                "mean": 0.011914609000086784,
+                "std": 0.039458464831113815,
+                "num_elements": 120,
+                "num_bytes": 480
+            },
+            "files": {
+                "npy": "data/weights/fp32/npy/fc1_bias.npy",
+                "txt": "data/weights/fp32/txt/fc1_bias.txt",
+                "mem": "data/weights/fp32/mem/fc1_bias.mem",
+                "c_header": "data/weights/fp32/c/fc1_bias.h"
+            }
+        },
+        {
+            "name": "fc2_weight",
+            "shape": [
+                84,
+                120
+            ],
+            "dtype": "float32",
+            "flatten_order": "C",
+            "statistics": {
+                "min": -0.3335491716861725,
+                "max": 0.3494926989078522,
+                "mean": 0.007115788757801056,
+                "std": 0.06278710812330246,
+                "num_elements": 10080,
+                "num_bytes": 40320
+            },
+            "files": {
+                "npy": "data/weights/fp32/npy/fc2_weight.npy",
+                "txt": "data/weights/fp32/txt/fc2_weight.txt",
+                "mem": "data/weights/fp32/mem/fc2_weight.mem",
+                "c_header": "data/weights/fp32/c/fc2_weight.h"
+            }
+        },
+        {
+            "name": "fc2_bias",
+            "shape": [
+                84
+            ],
+            "dtype": "float32",
+            "flatten_order": "C",
+            "statistics": {
+                "min": -0.1399969458580017,
+                "max": 0.13725584745407104,
+                "mean": 0.01929641142487526,
+                "std": 0.048537638038396835,
+                "num_elements": 84,
+                "num_bytes": 336
+            },
+            "files": {
+                "npy": "data/weights/fp32/npy/fc2_bias.npy",
+                "txt": "data/weights/fp32/txt/fc2_bias.txt",
+                "mem": "data/weights/fp32/mem/fc2_bias.mem",
+                "c_header": "data/weights/fp32/c/fc2_bias.h"
+            }
+        },
+        {
+            "name": "fc3_weight",
+            "shape": [
+                10,
+                84
+            ],
+            "dtype": "float32",
+            "flatten_order": "C",
+            "statistics": {
+                "min": -0.38348567485809326,
+                "max": 0.24205614626407623,
+                "mean": -0.013439653441309929,
+                "std": 0.10529105365276337,
+                "num_elements": 840,
+                "num_bytes": 3360
+            },
+            "files": {
+                "npy": "data/weights/fp32/npy/fc3_weight.npy",
+                "txt": "data/weights/fp32/txt/fc3_weight.txt",
+                "mem": "data/weights/fp32/mem/fc3_weight.mem",
+                "c_header": "data/weights/fp32/c/fc3_weight.h"
+            }
+        },
+        {
+            "name": "fc3_bias",
+            "shape": [
+                10
+            ],
+            "dtype": "float32",
+            "flatten_order": "C",
+            "statistics": {
+                "min": -0.11236078292131424,
+                "max": 0.11847778409719467,
+                "mean": 0.02077406272292137,
+                "std": 0.06859441846609116,
+                "num_elements": 10,
+                "num_bytes": 40
+            },
+            "files": {
+                "npy": "data/weights/fp32/npy/fc3_bias.npy",
+                "txt": "data/weights/fp32/txt/fc3_bias.txt",
+                "mem": "data/weights/fp32/mem/fc3_bias.mem",
+                "c_header": "data/weights/fp32/c/fc3_bias.h"
+            }
+        }
+    ]
+}

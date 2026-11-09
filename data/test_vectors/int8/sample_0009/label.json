@@ -1,0 +1,5 @@
+{
+  "label": 9,
+  "fp32_prediction": 9,
+  "int8_prediction": 9
+}

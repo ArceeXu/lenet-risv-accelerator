@@ -1,0 +1,10 @@
+{
+    "model": "LeNet",
+    "precision": "FP32",
+    "dataset": "MNIST Test",
+    "total_samples": 10000,
+    "correct_samples": 9891,
+    "test_loss": 0.033424030298017895,
+    "test_accuracy": 0.9891,
+    "test_accuracy_percent": 98.91
+}

@@ -1,0 +1,11 @@
+sample_index,true_label,numpy_prediction,pytorch_prediction,prediction_match
+0,7,7,7,True
+1,2,2,2,True
+2,1,1,1,True
+3,0,0,0,True
+4,4,4,4,True
+5,1,1,1,True
+6,4,4,4,True
+7,9,9,9,True
+8,5,5,5,True
+9,9,9,9,True

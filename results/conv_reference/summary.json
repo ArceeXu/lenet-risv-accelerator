@@ -1,0 +1,16 @@
+{
+    "model": "LeNet",
+    "precision": "FP32",
+    "reference": "PyTorch",
+    "implementation": "NumPy manual loops",
+    "samples_tested": 10,
+    "layers_per_sample": 12,
+    "total_layer_checks": 120,
+    "passed_layer_checks": 120,
+    "all_layers_passed": true,
+    "prediction_matches": 10,
+    "all_predictions_match": true,
+    "atol": 0.0001,
+    "rtol": 0.0001,
+    "elapsed_seconds": 5.802175299999362
+}

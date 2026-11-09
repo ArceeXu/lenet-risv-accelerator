@@ -1,0 +1,9 @@
+{
+  "samples": 10000,
+  "fp32_accuracy": 0.9891,
+  "int8_accuracy": 0.9886,
+  "accuracy_drop_percentage_points": 0.05,
+  "prediction_agreement": 0.999,
+  "int8_correct": 9886,
+  "note": "PC reference accuracy, not SoC validation or hardware performance"
+}

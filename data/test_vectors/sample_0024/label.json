@@ -1,0 +1,6 @@
+{
+    "sample_index": 24,
+    "true_label": 4,
+    "predicted_label": 4,
+    "correct": true
+}
