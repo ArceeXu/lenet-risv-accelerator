@@ -1,0 +1,10 @@
+{
+  "samples": 10000,
+  "c_correct": 9886,
+  "python_int8_correct": 9886,
+  "prediction_matches": 10000,
+  "prediction_mismatches": 0,
+  "c_accuracy": 0.98860000,
+  "python_int8_accuracy": 0.98860000,
+  "prediction_agreement": 1.00000000
+}

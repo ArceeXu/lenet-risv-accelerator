@@ -1,0 +1,11 @@
+{
+  "samples": 10000,
+  "python_prediction_source": "results/quantization/prediction_comparison.csv",
+  "python_report_sha256": "e22644695604e84118a6039735a3c5e0cf02aea8629e3393549036b3187fd448",
+  "files_sha256": {
+    "images.idx": "0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7",
+    "labels.idx": "ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2",
+    "python_int8_predictions.bin": "94a25da2e2c3e05bac141821440e6cd7033ff53c7c84b732cf26266d43a0e835"
+  },
+  "note": "Predictions reuse the existing Python INT8 evaluation; no inference is rerun."
+}
